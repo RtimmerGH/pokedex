@@ -1,0 +1,50 @@
+{
+  "pokemon": [
+    {
+      "name": "Bulbizarre",
+      "url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png",
+      "description": "Il y a une graine sur son dos depuis sa naissance. Elle grossit un peu chaque jour. ",
+      "id": 1
+    },
+    {
+      "name": "Herbizarre",
+      "url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png",
+      "description": "Son bulbe dorsal est devenu si gros qu’il ne peut plus se tenir sur ses pattes postérieures. ",
+      "id": 2
+    },
+    {
+      "name": "Florizarre",
+      "url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png",
+      "description": "Sa plante donne une grosse fleur quand elle absorbe les rayons du soleil. Il est toujours à la recherche des endroits les plus ensoleillés. ",
+      "id": 3
+    },
+    {
+      "name": "Salamèche",
+      "url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png",
+      "description": "Il préfère ce qui est chaud. En cas de pluie, de la vapeur se forme autour de sa queue. ",
+      "id": 4
+    },
+    {
+      "name": "Reptincel",
+      "url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/005.png",
+      "description": "Il est très brutal. En combat, il se sert de ses griffes acérées et de sa queue enflammée pour mettre en pièces ses adversaires. ",
+      "id": 5
+    },
+    {
+      "name": "Dracaufeu",
+      "url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png",
+      "description": "On raconte que plus un Dracaufeu a vécu de combats difficiles, plus sa flamme est brûlante. ",
+      "id": 6
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

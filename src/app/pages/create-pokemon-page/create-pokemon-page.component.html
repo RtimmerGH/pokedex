@@ -1,0 +1,28 @@
+
+<h2 style="text-align: center;">Ajout de Pokemon</h2>
+<div class="row container">
+    <form class="col s12" (ngSubmit)="pokemonForm.valid && onSubmit()" [formGroup]="pokemonForm" #myForm="ngForm">
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="first_name" type="text" class="validate" formControlName="name">
+          <label for="first_name" class="active">Nom</label>
+          <span *ngIf="pokemonForm.controls.name.errors?.['required']  && myForm.submitted">Le nom est requis</span>
+        </div>
+        <div class="input-field col s12">
+          <input id="last_name" type="text" class="validate" formControlName="url">
+          <label for="last_name" class="active">Image</label>
+          <span *ngIf="pokemonForm.controls.url.errors?.['required']  && myForm.submitted">L'url est requise</span>
+        </div>
+      
+        <div class="input-field col s12">
+          <input id="description" type="text" class="validate" formControlName="description">
+          <label for="description" class="active">Description</label>
+          <span *ngIf="pokemonForm.controls.description.errors?.['required'] && myForm.submitted">La description est requise</span>
+        </div>
+        
+      </div>   
+      <button class="btn waves-effect waves-light" [style]="!pokemonForm.valid ? 'background-color:#ef9a9a': '' " type="submit" name="action">Ajouter un Pokemon        
+      </button>          
+    </form>
+  </div>
+        

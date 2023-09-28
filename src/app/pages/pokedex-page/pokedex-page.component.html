@@ -1,0 +1,4 @@
+<div class="flex-container">
+    <app-pokemon-list class="component" [pokemonList]="pokemonList" (pokemonSelected)="showDetail($event)"></app-pokemon-list>
+    <app-pokemon-detail class="component" *ngIf="selectedPokemon" [selectedPokemon]="selectedPokemon" ></app-pokemon-detail>
+</div>

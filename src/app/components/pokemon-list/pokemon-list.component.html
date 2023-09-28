@@ -1,0 +1,7 @@
+<h2 style="text-align: center;">Pokedex</h2>
+<div class="flex-container">
+    <div class="card" *ngFor="let pokemon of pokemonList; index as index" (click)="selectPokemon(index)">
+        <p>{{pokemon.name}}</p>
+        <img class="image-pokemon" [src]="pokemon.url" [alt]="pokemon.name">
+    </div>
+</div>
