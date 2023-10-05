@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
+import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -9,6 +9,7 @@ import { PokedexPageComponent } from './pages/pokedex-page/pokedex-page.componen
 import { PokemonListComponent } from './components/pokemon-list/pokemon-list.component';
 import { PokemonDetailComponent } from './components/pokemon-detail/pokemon-detail.component';
 import { CreatePokemonPageComponent } from './pages/create-pokemon-page/create-pokemon-page.component';
+import {ReqTimeInterceptor} from "./shared/interceptors/reqTimeInterceptor";
 
 @NgModule({
   declarations: [
@@ -24,7 +25,11 @@ import { CreatePokemonPageComponent } from './pages/create-pokemon-page/create-p
     HttpClientModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [{
+    provide: HTTP_INTERCEPTORS,
+    useClass: ReqTimeInterceptor,
+    multi: true
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

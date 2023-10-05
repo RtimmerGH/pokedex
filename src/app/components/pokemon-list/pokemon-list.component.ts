@@ -14,8 +14,6 @@ export class PokemonListComponent {
   constructor(){}
 
   selectPokemon(index:number){
-    console.log('index',index );
-    
     this.pokemonSelected.emit(index);
   }
 }

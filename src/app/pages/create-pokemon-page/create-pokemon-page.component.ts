@@ -27,17 +27,15 @@ export class CreatePokemonPageComponent {
   ngOnInit(){
     this.pokemonChange = this.pokemonForm.valueChanges
     .subscribe(value => {
-      this.newPokemon = value as Pokemon;      
-    });    
+      this.newPokemon = value as Pokemon;
+    });
   }
 
   ngOnDestroy(){
-    this.pokemonChange?.unsubscribe();    
+    this.pokemonChange?.unsubscribe();
   }
 
   onSubmit(){
-    console.log('test');
-    
     this.pokedexService.postPokemon(this.newPokemon)
     .subscribe(pokemon => {alert(`${pokemon.name} a bien été ajouté à la liste des Pokemons`)});
   }

@@ -35,6 +35,12 @@
       "url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png",
       "description": "On raconte que plus un Dracaufeu a vécu de combats difficiles, plus sa flamme est brûlante. ",
       "id": 6
+    },
+    {
+      "name": "Carabaffe",
+      "url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/008.png",
+      "description": " Il est considéré comme un symbole de longévité. On reconnaît les spécimens les plus âgés à la mousse qui pousse sur leur carapace. ",
+      "id": 7
     }
   ],
   "comments": [

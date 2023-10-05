@@ -24,8 +24,6 @@ export class PokedexPageComponent {
   showDetail(event:number){
     if (this.pokemonList) {
       this.selectedPokemon = this.pokemonList[event];
-      console.log('this.selectedPokemon', this.selectedPokemon);
-      
     }
   }
 }

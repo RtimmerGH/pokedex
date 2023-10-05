@@ -9,8 +9,4 @@ import Pokemon from 'src/app/shared/models/pokemon.model';
 export class PokemonDetailComponent {
   @Input() selectedPokemon?:Pokemon;
 
-  ngOnInit(){
-    console.log('poek: ',this.selectedPokemon);
-    
-  }
 }
